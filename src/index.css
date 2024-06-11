@@ -9,3 +9,7 @@
 *{
     font-family: "Poppins", sans-serif;
 }
+
+::selection{
+    background-color: rgb(1, 159, 221);
+}
