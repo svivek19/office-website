@@ -2,7 +2,7 @@ import React from "react";
 import DiamondImageGallery from "../components/DiamondImageGallery";
 import mission from "../assets/mission.png";
 import vision from "../assets/vision.gif";
-import { FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 const Home = () => {
@@ -48,7 +48,7 @@ const Home = () => {
       </div>
 
       {/* vision */}
-      <div className="grid grid-cols-1 md:grid-cols-2 w-11/12 mx-auto my-4 md:my-36">
+      <div className="grid grid-cols-1 md:grid-cols-2 w-11/12 mx-auto my-4 md:mt-36 md:mb-10">
         <div className="mt-16 justify-center space-y-8">
           <h1 className="text-4xl font-semibold">Our Vision</h1>
           <hr className="w-14 border-2 border-sky-600" />
@@ -69,19 +69,25 @@ const Home = () => {
 
       {/* Social Accounts */}
 
-      <div className="flex flex-col space-y-4 justify-center items-center mb-16">
+      <div className="flex flex-col space-y-2 justify-center items-center mt-12 mb-12">
         <h1 className="text-4xl font-semibold">Connect Us!</h1>
-        <hr className="w-14 border-2 border-sky-600" />
+        <hr className=" w-14 border-2 border-sky-600" />
 
         <div className="flex py-14 text-3xl space-x-6">
-          <div className="border border-stone-800 p-3 rounded-full hover:bg-sky-200 transition-all duration-400 transform hover:scale-110 cursor-pointer">
-            <FaXTwitter />
+          <div className="border border-slate-800 p-3 rounded-full hover:bg-sky-200 transition-all duration-400 transform hover:scale-110 cursor-pointer">
+            <a href="#">
+              <FaXTwitter />
+            </a>
           </div>
-          <div className="border border-stone-800 p-3 rounded-full hover:bg-sky-200 transition-all duration-400 transform hover:scale-110 cursor-pointer">
-            <FaLinkedinIn />
+          <div className="border border-slate-800 p-3 rounded-full hover:bg-sky-200 transition-all duration-400 transform hover:scale-110 cursor-pointer">
+            <a href="#">
+              <FaLinkedin />
+            </a>
           </div>
-          <div className="border border-stone-800 p-3 rounded-full hover:bg-sky-200 transition-all duration-400 transform hover:scale-110 cursor-pointer">
-            <FaInstagram />
+          <div className="border border-slate-800 p-3 rounded-full hover:bg-sky-200 transition-all duration-400 transform hover:scale-110 cursor-pointer">
+            <a href="#">
+              <FaInstagram />
+            </a>
           </div>
         </div>
       </div>
