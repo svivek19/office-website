@@ -45,7 +45,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                to={"/"}
+                to={"/projects"}
                 onClick={toggleMenu}
                 className="block py-2 px-3 text-gray-900 md:p-0 hover:text-sky-600 transition-all duration-500 text-[18px] font-medium"
               >
@@ -55,7 +55,7 @@ const Navbar = () => {
 
             <li>
               <Link
-                to={"/"}
+                to={"/contact"}
                 onClick={toggleMenu}
                 className="block py-2 px-3 text-gray-900 md:p-0 hover:text-sky-600 transition-all duration-500 text-[18px] font-medium"
               >
