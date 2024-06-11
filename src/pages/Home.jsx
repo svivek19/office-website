@@ -74,17 +74,17 @@ const Home = () => {
         <hr className=" w-14 border-2 border-sky-600" />
 
         <div className="flex py-14 text-3xl space-x-6">
-          <div className="border border-slate-800 p-3 rounded-full hover:bg-sky-200 transition-all duration-400 transform hover:scale-110 cursor-pointer">
+          <div className="border border-slate-800 p-3 rounded-full hover:bg-sky-200 transition-all duration-500 transform hover:scale-110 cursor-pointer">
             <a href="#">
               <FaXTwitter />
             </a>
           </div>
-          <div className="border border-slate-800 p-3 rounded-full hover:bg-sky-200 transition-all duration-400 transform hover:scale-110 cursor-pointer">
+          <div className="border border-slate-800 p-3 rounded-full hover:bg-sky-200 transition-all duration-500 transform hover:scale-110 cursor-pointer">
             <a href="#">
               <FaLinkedin />
             </a>
           </div>
-          <div className="border border-slate-800 p-3 rounded-full hover:bg-sky-200 transition-all duration-400 transform hover:scale-110 cursor-pointer">
+          <div className="border border-slate-800 p-3 rounded-full hover:bg-sky-200 transition-all duration-500 transform hover:scale-110 cursor-pointer">
             <a href="#">
               <FaInstagram />
             </a>
