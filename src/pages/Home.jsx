@@ -60,7 +60,7 @@ const Home = () => {
             life for individuals and communities globally.
           </p>
         </div>
-        <div className="w-full md:w-[70%] mx-auto flex justify-center items-center">
+        <div className="w-full md:w-[70%] mx-auto order-first md:order-last flex justify-center items-center">
           <img src={vision} alt="mission logo" />
         </div>
       </div>
