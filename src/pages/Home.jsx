@@ -2,6 +2,8 @@ import React from "react";
 import DiamondImageGallery from "../components/DiamondImageGallery";
 import mission from "../assets/mission.png";
 import vision from "../assets/vision.gif";
+import { FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Home = () => {
   return (
@@ -62,6 +64,25 @@ const Home = () => {
         </div>
         <div className="w-full md:w-[70%] mx-auto order-first md:order-last flex justify-center items-center">
           <img src={vision} alt="mission logo" />
+        </div>
+      </div>
+
+      {/* Social Accounts */}
+
+      <div className="flex flex-col space-y-4 justify-center items-center mb-16">
+        <h1 className="text-4xl font-semibold">Connect Us!</h1>
+        <hr className="w-14 border-2 border-sky-600" />
+
+        <div className="flex py-14 text-3xl space-x-6">
+          <div className="border border-stone-800 p-3 rounded-full hover:bg-sky-200 transition-all duration-400 transform hover:scale-110 cursor-pointer">
+            <FaXTwitter />
+          </div>
+          <div className="border border-stone-800 p-3 rounded-full hover:bg-sky-200 transition-all duration-400 transform hover:scale-110 cursor-pointer">
+            <FaLinkedinIn />
+          </div>
+          <div className="border border-stone-800 p-3 rounded-full hover:bg-sky-200 transition-all duration-400 transform hover:scale-110 cursor-pointer">
+            <FaInstagram />
+          </div>
         </div>
       </div>
     </>
