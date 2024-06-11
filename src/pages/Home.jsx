@@ -29,8 +29,8 @@ const Home = () => {
 
       {/* mission */}
 
-      <div className="grid grid-cols-1 md:grid-cols-2 w-11/12 mx-auto my-36">
-        <div className="w-[70%] flex justify-center items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 w-11/12 mx-auto my-4 md:my-36">
+        <div className="w-full md:w-[70%] flex justify-center items-center">
           <img src={mission} alt="mission logo" />
         </div>
         <div className="mt-16 justify-center space-y-8">
