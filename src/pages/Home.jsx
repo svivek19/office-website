@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import DiamondImageGallery from "../components/DiamondImageGallery";
 import mission from "../assets/mission.png";
 import vision from "../assets/vision.gif";
@@ -6,6 +6,10 @@ import { FaLinkedin, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-2 w-11/12 mx-auto mt-4 md:mt-0">
