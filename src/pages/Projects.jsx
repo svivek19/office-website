@@ -2,42 +2,64 @@ import React, { useState } from "react";
 import { FiPlus, FiMinus } from "react-icons/fi";
 import projectDetails from "../json/Projects.json";
 
-console.log(projectDetails.projectDetails);
+const data = projectDetails.projectDetails;
 
 const Projects = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(-1);
 
-  const toggleAccordion = (index) => {
+  const toggleItem = (index) => {
     setActiveIndex(activeIndex === index ? -1 : index);
   };
 
   return (
-    <div className="accordion-group">
-      <div
-        className={`accordion ${activeIndex === 0 ? "active" : ""}`}
-        id="heading-one"
-      >
-        <button
-          className="accordion-toggle py-3 inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 rounded-lg"
-          onClick={() => toggleAccordion(0)}
-          aria-controls="collapse-one"
-        >
-          {activeIndex === 0 ? <FiMinus size={24} /> : <FiPlus size={24} />}
-          Accordion #1
-        </button>
-        <div
-          id="collapse-one"
-          className={`accordion-content w-full overflow-hidden transition-[height] duration-300 ${
-            activeIndex === 0 ? "" : "hidden"
-          }`}
-        >
-          <div className="text-gray-800">
-            <em>This is the third item's accordion body.</em> It is hidden by
-            default, until the collapse plugin adds the appropriate classes that
-            we use to style each element. These classes control the overall
-            appearance, as well as the showing and hiding via CSS transitions.
+    <div className="w-4/6 mx-auto mb-5">
+      <div>
+        {data.map((item, index) => (
+          <div
+            className={`${activeIndex === index ? "active" : ""}`}
+            key={item.id}
+          >
+            <button
+              className="py-3 inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 rounded-lg"
+              onClick={() => toggleItem(index)}
+            >
+              {activeIndex === index ? (
+                <FiMinus size={24} />
+              ) : (
+                <FiPlus size={24} />
+              )}
+              {item.title}
+            </button>
+            <div
+              className={`w-full overflow-hidden transition-[height] duration-300 ${
+                activeIndex === index ? "" : "hidden"
+              }`}
+            >
+              <div className="text-gray-800 flex flex-col space-y-4 text-justify mx-10">
+                <div>
+                  <h3 className="text-lg font-medium text-sky-600">Overview</h3>
+                  <p className="text-slate-700 mx-6">{item.overview}</p>
+                </div>
+                <div>
+                  <ul>
+                    <li className="text-green-500 text-lg font-medium">
+                      Features
+                    </li>
+                    {item.features.map((list, i) => (
+                      <li key={i} className="list-item mx-6 text-slate-700">
+                        {list}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-lg font-medium text-sky-500">Benefits</h3>
+                  <p className="text-slate-700 mx-6">{item.benefits}</p>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
+        ))}
       </div>
     </div>
   );
