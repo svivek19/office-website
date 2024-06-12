@@ -1,0 +1,117 @@
+{
+    "projectDetails": [
+      {
+        "id": 1,
+
+        "title": "Automatic Irrigation System",
+
+        "overview": "Our Automatic Irrigation System prototype is designed to optimize water usage in agricultural settings. The system monitors soil moisture levels and automatically adjusts irrigation schedules, ensuring crops receive the right amount of water.",
+
+        "features": ["Real-time soil moisture monitoring", "Automated irrigation control","Water usage analytics"
+        , "Mobile app integration"],
+
+        "benefits": "This system helps farmers conserve water, reduce labor costs, and improve crop yields, making agriculture more sustainable and profitable."
+      },
+      {
+        "id": 2,
+        
+        "title": "Helmet Violation Detection",
+        
+        "overview": "Our Helmet Violation Detection system identifies motorcyclists who are not wearing helmets. Using advanced image processing and machine learning techniques, this system can detect violations in real-time.",
+        
+        "features": ["High-accuracy detection", "Real-time alerts","Integration with traffic management systems"
+        , "Data logging and reporting Impact"],
+        
+        "benefits": "By promoting helmet use, this system enhances road safety and reduces the risk of severe injuries in traffic accidents."
+      },
+      {
+        "id": 3,
+        
+        "title": "Triples Violation Detection",
+        
+        "overview": "The Triples Violation Detection system detects instances where more than two individuals are riding a motorcycle which is against traffic regulations.",
+
+        "features": ["Real-time detection", "High accuracy","Alert system", "Data recording"],
+        
+        "benefits": "This system helps enforce traffic laws, improving overall road safety and reducing accident rates."
+      },
+      {
+        "id": 4,
+        
+        "title": "Lane Change Detection",
+        
+        "overview": "Our Lane Change Detection system monitors and detects illegal lane changes, helping to prevent accidents and ensure orderly traffic flow.",
+
+        "features": ["Real-time lane monitoring", "Accurate detection of lane violations","Integration with traffic cameras", "Data logging"],
+        
+        "benefits": "This system improves road safety by encouraging drivers to adhere to lane discipline, reducing the likelihood of collisions."
+      },
+      {
+        "id": 5,
+        
+        "title": "Wrong Side Detection",
+        
+        "overview": "The Wrong Side Detection system identifies vehicles driving against the flow of traffic, a dangerous violation that can lead to severe accidents.",
+
+        "features": ["Real-time detection", "Immediate alerts to traffic authorities","Integration with traffic management systems", "Comprehensive violation logging"],
+        
+        "benefits": "By detecting and addressing wrong side driving, this system enhances road safety and reduces the potential for head-on collisions."
+      },
+      {
+        "id": 6,
+        
+        "title": "Crowd Detection",
+        
+        "overview": "Our Crowd Detection system uses advanced image processing to monitor and analyze crowd density in public spaces, helping authorities manage large gatherings efficiently.",
+
+        "features": ["Real-time crowd monitoring", "Density analysis","Alerts for overcrowding", "Data analytics"],
+        
+        "benefits": "This system assists in maintaining public safety, preventing overcrowding, and ensuring efficient crowd management."
+      },
+      {
+        "id": 7,
+        
+        "title": "No Parking Alarming System",
+        
+        "overview": "The No Parking Alarming System identifies vehicles parked in no-parking zones and alerts authorities to take necessary action.",
+
+        "features": ["Real-time detection of illegal parking", "Automated alerts","Integration with enforcement systems", "Data logging and reporting"],
+        
+        "benefits": "This system helps maintain traffic flow and ensures compliance with parking regulations, reducing congestion and improving road safety."
+      },
+      {
+        "id": 8,
+        
+        "title": "Number Plate Extractor",
+        
+        "overview": "Our Number Plate Extractor system uses advanced image recognition to read and record vehicle license plates for various applications, including law enforcement and toll collection.",
+
+        "features": ["High-accuracy plate recognition", "Real-time processing","Integration with existing systems", "Data storage and retrieval"],
+        
+        "benefits": "This system is crucial for traffic management, law enforcement, and automated toll collection, providing reliable and efficient vehicle identification."
+      },
+      {
+        "id": 9,
+        
+        "title": "Object Detector",
+        
+        "overview": "The Object Detector system identifies and tracks objects in various environments, offering versatile applications from security to automation.",
+
+        "features": ["Real-time object detection", "High accuracy and reliability","Customizable for different use cases", "Data logging and analysis"],
+        
+        "benefits": "This system is used in security surveillance, industrial automation, and more, providing enhanced situational awareness and operational efficiency."
+      },
+      {
+        "id": 10,
+        
+        "title": "The Indian Police News",
+        
+        "overview": "The Indian Police News webpage provides up-to-date news and insights about law enforcement activities and advancements across India. Stay informed about the latest developments and success stories in policing.",
+
+        "features": ["Latest news articles", "Success stories","Interviews with law enforcement officials", "Innovations in policing"],
+        
+        "benefits": "This webpage aims to keep the public informed and foster a positive relationship between the police and the community by highlighting their efforts and achievements."
+      }
+    ]
+  }
+  
