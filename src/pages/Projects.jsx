@@ -12,7 +12,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="w-4/6 mx-auto mb-5">
+    <div className="w-5/6 md:w-4/6 mx-auto mb-5">
       <div>
         {data.map((item, index) => (
           <div
@@ -35,7 +35,7 @@ const Projects = () => {
                 activeIndex === index ? "" : "hidden"
               }`}
             >
-              <div className="text-gray-800 flex flex-col space-y-4 text-justify mx-10">
+              <div className="text-gray-800 flex flex-col space-y-4 text-justify mx-0 md:mx-10">
                 <div>
                   <h3 className="text-lg font-medium text-sky-600">Overview</h3>
                   <p className="text-slate-700 mx-6">{item.overview}</p>
