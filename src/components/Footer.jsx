@@ -20,7 +20,7 @@ const Footer = () => {
             to VIT, Vellore- 632014
           </p>
           <p className="text-slate-300 text-[12px] md:text-[15px]">
-            9342836860{" "}
+            +91 9342836860{" "}
           </p>
         </div>
         <div className="flex  p-4 md:p-0 justify-start space-x-6 text-slate-400 text-sm underline underline-offset-2 ">
