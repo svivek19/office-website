@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import logo from "../assets/company-logo.png";
 import { Link } from "react-router-dom";
-import { IoMdMore } from "react-icons/io";
+import { CiMenuFries } from "react-icons/ci";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -44,7 +44,7 @@ const Navbar = () => {
           aria-expanded={isMenuOpen ? "true" : "false"}
           onClick={toggleMenu}
         >
-          <IoMdMore className="text-4xl" />
+          <CiMenuFries className="text-4xl" />
         </button>
         <div
           className={`w-full md:block md:w-auto ${
