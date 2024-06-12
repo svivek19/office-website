@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FiPlus, FiMinus } from "react-icons/fi";
 import projectDetails from "../json/Projects.json";
 
@@ -10,6 +10,10 @@ const Projects = () => {
   const toggleItem = (index) => {
     setActiveIndex(activeIndex === index ? -1 : index);
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="w-5/6 md:w-4/6 mx-auto mb-5">
