@@ -1,0 +1,41 @@
+{
+    "current_openings": [
+        {
+            "id": 525,
+            "role": "Frontend Developer",
+           "requirements" : ["HTML","CSS","Javascript","React Js"],
+           "experience" : "Freshser",
+           "salary" : "2 lpa - 4 lpa"
+        },
+        {
+            "id": 763,
+            "role": "Backend Developer",
+           "requirements" : ["Node JS","Express JS","Mongo DB"],
+           "experience" : "2+ years ",
+           "salary" : "5 lpa - 7 lpa"
+        },
+        {
+            "id": 997,
+            "role": "UI/UX Designer",
+           "requirements" : ["Figma","Adobe XD","Adobe Illustrator","PhotoShop"],
+           "experience" : "1 year",
+           "salary" : "3 lpa - 5 lpa"
+        }
+    ],
+    "oppenigs": [
+        {
+            "id": 123,
+            "role": "Full Stack Developer",
+           "requirements" : ["Javascript","Java","Sql","DSA"],
+           "experience" : "4+ years",
+           "salary" : "6 lpa - 8 lpa"
+        },
+        {
+            "id": 763,
+            "role": "AL/ML Developer",
+           "requirements" : ["Python","Mechine Learning","Algorithm"],
+           "experience" : "3+ years ",
+           "salary" : "5 lpa - 7 lpa"
+        }
+    ]
+}

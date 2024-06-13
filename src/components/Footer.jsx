@@ -37,12 +37,12 @@ const Footer = () => {
           >
             Support
           </a>
-          <a
-            href="#"
+          <Link
+            to={"/career"}
             className="hover:text-sky-600 transition-all duration-500"
           >
             Careers
-          </a>
+          </Link>
         </div>
       </div>
       {/* copyrights */}
