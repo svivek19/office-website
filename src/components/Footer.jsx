@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const updateYear = () => {
@@ -24,12 +25,12 @@ const Footer = () => {
           </p>
         </div>
         <div className="flex  p-4 md:p-0 justify-start space-x-6 text-slate-400 text-sm underline underline-offset-2 ">
-          <a
-            href="#"
+          <Link
+            to={"/contact"}
             className="hover:text-sky-600 transition-all duration-500"
           >
             Contact
-          </a>
+          </Link>
           <a
             href="#"
             className="hover:text-sky-600 transition-all duration-500"

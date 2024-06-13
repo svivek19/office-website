@@ -21,6 +21,14 @@ const Projects = () => {
       data-aos="zoom-in"
       data-aos-duration="3000"
     >
+      <div
+        className="mt-1 mb-4 justify-center space-y-8"
+        data-aos="fade-left"
+        data-aos-duration="3000"
+      >
+        <h1 className="text-4xl font-semibold">Our Products</h1>
+        <hr className="w-14 border-2 border-sky-600" />
+      </div>
       <div>
         {data.map((item, index) => (
           <div
