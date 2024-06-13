@@ -6,7 +6,11 @@ const Form = () => {
   };
 
   return (
-    <div className="flex justify-center items-center">
+    <div
+      className="flex justify-center items-center"
+      data-aos="fade-left"
+      data-aos-duration="3000"
+    >
       <form className="flex flex-col space-y-2">
         <label>Name</label>
         <input

@@ -13,7 +13,11 @@ const Home = () => {
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-2 w-11/12 mx-auto mt-4 md:mt-0">
-        <div className="flex flex-col justify-center space-y-8">
+        <div
+          className="flex flex-col justify-center space-y-8"
+          data-aos="fade-right"
+          data-aos-duration="3000"
+        >
           <div className="text-start flex flex-col space-y-3">
             <p className="text-4xl font-semibold">Welcome to</p>
             <p className="text-2xl font-semibold">
@@ -29,7 +33,7 @@ const Home = () => {
           </p>
         </div>
 
-        <div>
+        <div data-aos="fade-left" data-aos-duration="3000">
           <DiamondImageGallery />
         </div>
       </div>
@@ -37,10 +41,18 @@ const Home = () => {
       {/* mission */}
 
       <div className="grid grid-cols-1 md:grid-cols-2 w-11/12 mx-auto mt-4 md:mt-36">
-        <div className="w-full md:w-[70%] mx-auto flex justify-center items-center">
+        <div
+          className="w-full md:w-[70%] mx-auto flex justify-center items-center"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           <img src={mission} alt="mission logo" />
         </div>
-        <div className="mt-16 justify-center space-y-8">
+        <div
+          className="mt-16 justify-center space-y-8"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           <h1 className="text-4xl font-semibold">Our Mission</h1>
           <hr className="w-14 border-2 border-sky-600" />
           <p className="text-justify text-lg text-gray-800">
@@ -53,7 +65,11 @@ const Home = () => {
 
       {/* vision */}
       <div className="grid grid-cols-1 md:grid-cols-2 w-11/12 mx-auto my-4 md:mt-36 md:mb-10">
-        <div className="mt-16 justify-center space-y-8">
+        <div
+          className="mt-16 justify-center space-y-8"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           <h1 className="text-4xl font-semibold">Our Vision</h1>
           <hr className="w-14 border-2 border-sky-600" />
           <p className="text-justify text-lg text-gray-800">
@@ -66,14 +82,22 @@ const Home = () => {
             life for individuals and communities globally.
           </p>
         </div>
-        <div className="w-full md:w-[70%] mx-auto order-first md:order-last flex justify-center items-center">
+        <div
+          className="w-full md:w-[70%] mx-auto order-first md:order-last flex justify-center items-center"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           <img src={vision} alt="mission logo" />
         </div>
       </div>
 
       {/* Social Accounts */}
 
-      <div className="flex flex-col space-y-2 justify-center items-center mt-12 mb-12">
+      <div
+        className="flex flex-col space-y-2 justify-center items-center mt-12 mb-12"
+        data-aos="fade-up"
+        data-aos-duration="3000"
+      >
         <h1 className="text-4xl font-semibold">Connect Us!</h1>
         <hr className=" w-14 border-2 border-sky-600" />
 

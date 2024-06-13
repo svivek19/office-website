@@ -16,7 +16,11 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="w-5/6 md:w-4/6 mx-auto mb-5">
+    <div
+      className="w-5/6 md:w-4/6 mx-auto mb-5"
+      data-aos="zoom-in"
+      data-aos-duration="3000"
+    >
       <div>
         {data.map((item, index) => (
           <div

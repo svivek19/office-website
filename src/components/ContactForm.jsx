@@ -10,7 +10,11 @@ const ContactForm = () => {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 w-5/6 mx-auto my-10 md:my-20 space-y-10 md:space-y-0">
-      <div className="flex flex-col space-y-8">
+      <div
+        className="flex flex-col space-y-8"
+        data-aos="fade-right"
+        data-aos-duration="3000"
+      >
         <p className="text-base uppercase text-green-600 font-medium">
           Rest easy, we're here for you!
         </p>
