@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import toast, { Toaster } from "react-hot-toast";
 import "../App.css";
 
 const Form = () => {
@@ -48,7 +49,7 @@ const Form = () => {
         publicKey: publickey,
       })
       .then(() => {
-        console.log("success");
+        toast.success("Message send succesfully!", { duration: 3000 });
         form.current.reset();
         setErrors({});
       })
@@ -61,61 +62,64 @@ const Form = () => {
   };
 
   return (
-    <div
-      className="flex justify-center items-center"
-      data-aos="fade-left"
-      data-aos-duration="3000"
-    >
-      <form className="flex flex-col space-y-2" ref={form}>
-        <label>Name</label>
-        <input
-          type="text"
-          name="user_name"
-          className="border border-slate-300 p-1 rounded px-2 text-slate-700 outline-sky-500"
-        />
-        {errors.user_name && (
-          <span className="text-red-500">{errors.user_name}</span>
-        )}
-        <label>Email Id</label>
-        <input
-          type="email"
-          name="user_email"
-          className="border border-slate-300 p-1 rounded px-2 text-slate-700 outline-sky-500"
-        />
-        {errors.user_email && (
-          <span className="text-red-500">{errors.user_email}</span>
-        )}
-        <label>Phone number</label>
-        <input
-          type="number"
-          name="user_phone"
-          className="border border-slate-300 p-1 rounded px-2 text-slate-700 outline-sky-500"
-        />
-        {errors.user_phone && (
-          <span className="text-red-500">{errors.user_phone}</span>
-        )}
-        <label>Message</label>
-        <textarea
-          cols="20"
-          rows="5"
-          placeholder="Feel free to ask!"
-          name="user_message"
-          className="border border-slate-300 p-1 rounded px-2 text-slate-700
+    <>
+      <Toaster position="top-center" reverseOrder={false} />
+      <div
+        className="flex justify-center items-center"
+        data-aos="fade-left"
+        data-aos-duration="3000"
+      >
+        <form className="flex flex-col space-y-2" ref={form}>
+          <label>Name</label>
+          <input
+            type="text"
+            name="user_name"
+            className="border border-slate-300 p-1 rounded px-2 text-slate-700 outline-sky-500"
+          />
+          {errors.user_name && (
+            <span className="text-red-500">{errors.user_name}</span>
+          )}
+          <label>Email Id</label>
+          <input
+            type="email"
+            name="user_email"
+            className="border border-slate-300 p-1 rounded px-2 text-slate-700 outline-sky-500"
+          />
+          {errors.user_email && (
+            <span className="text-red-500">{errors.user_email}</span>
+          )}
+          <label>Phone number</label>
+          <input
+            type="number"
+            name="user_phone"
+            className="border border-slate-300 p-1 rounded px-2 text-slate-700 outline-sky-500"
+          />
+          {errors.user_phone && (
+            <span className="text-red-500">{errors.user_phone}</span>
+          )}
+          <label>Message</label>
+          <textarea
+            cols="20"
+            rows="5"
+            placeholder="Feel free to ask!"
+            name="user_message"
+            className="border border-slate-300 p-1 rounded px-2 text-slate-700
         outline-sky-500"
-        ></textarea>
-        {errors.user_message && (
-          <span className="text-red-500">{errors.user_message}</span>
-        )}
-        <button
-          className="bg-green-500 py-2 rounded uppercase text-lg text-slate-900 font-medium hover:bg-green-600 
+          ></textarea>
+          {errors.user_message && (
+            <span className="text-red-500">{errors.user_message}</span>
+          )}
+          <button
+            className="bg-green-500 py-2 rounded uppercase text-lg text-slate-900 font-medium hover:bg-green-600 
         transition-all duration-500"
-          onClick={handleBtn}
-          disabled={loading}
-        >
-          {loading ? <div className="loading"></div> : "Submit"}
-        </button>
-      </form>
-    </div>
+            onClick={handleBtn}
+            disabled={loading}
+          >
+            {loading ? <div className="loading"></div> : "Submit"}
+          </button>
+        </form>
+      </div>
+    </>
   );
 };
 
