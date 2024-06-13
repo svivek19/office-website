@@ -62,7 +62,7 @@ const Projects = () => {
                       Features
                     </li>
                     {item.features.map((list, i) => (
-                      <li key={i} className="list-item mx-6 text-slate-700">
+                      <li key={i} className="mx-6 text-slate-700 blue-tick">
                         {list}
                       </li>
                     ))}
