@@ -4,7 +4,7 @@
             "id": 525,
             "role": "Frontend Developer",
            "requirements" : ["HTML","CSS","Javascript","React Js"],
-           "experience" : "Freshser",
+           "experience" : "Fresher",
            "salary" : "2 lpa - 4 lpa"
         },
         {
@@ -17,7 +17,7 @@
         {
             "id": 997,
             "role": "UI/UX Designer",
-           "requirements" : ["Figma","Adobe XD","Adobe Illustrator","PhotoShop"],
+           "requirements" : ["Figma","Adobe XD","Illustrator","PhotoShop"],
            "experience" : "1 year",
            "salary" : "3 lpa - 5 lpa"
         }
