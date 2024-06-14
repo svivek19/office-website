@@ -57,6 +57,9 @@ const Career = () => {
                 {job.experience}
               </h4>
               <h5 className="text-base uppercase text-red-700">{job.salary}</h5>
+              <button className="text-start my-2 text-sm text-violet-800 underline underline-offset-2 hover:text-violet-500">
+                Apply
+              </button>
             </div>
           </div>
         </div>
@@ -113,6 +116,9 @@ const Career = () => {
                 {job.experience}
               </h4>
               <h5 className="text-base uppercase text-red-700">{job.salary}</h5>
+              <button className="text-start my-2 text-sm text-violet-800 underline underline-offset-2 hover:text-violet-500">
+                Apply
+              </button>
             </div>
           </div>
         </div>
