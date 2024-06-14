@@ -25,17 +25,12 @@ const Footer = () => {
           </p>
         </div>
         <div className="flex  p-4 md:p-0 justify-start space-x-6 text-slate-400 text-sm underline underline-offset-2 ">
-          <Link
-            to={"/contact"}
+          <a
+            href="https://forms.gle/MNQuffQD9VowYrh2A"
+            target="_blank"
             className="hover:text-sky-600 transition-all duration-500"
           >
             Contact
-          </Link>
-          <a
-            href="#"
-            className="hover:text-sky-600 transition-all duration-500"
-          >
-            Support
           </a>
           <Link
             to={"/career"}
