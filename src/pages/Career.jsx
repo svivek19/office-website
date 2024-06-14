@@ -35,6 +35,14 @@ const Career = () => {
                   </span>
                 ))}
               </h3>
+              <p
+                className={`text-sm font-medium bg-violet-700 w-fit px-2 py-1 rounded-md text-white ${
+                  job.experience === "Fresher" ? "block" : "hidden"
+                }`}
+              >
+                HOT
+                <span className="text-sm animate-fire">🔥</span>
+              </p>
             </div>
             <div className="mt-4 flex flex-row space-y-0 md:space-y-2 md:flex-col justify-between">
               <h4 className="text-base capitalize text-sky-800">
