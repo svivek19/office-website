@@ -108,7 +108,10 @@ const Home = () => {
             </a>
           </div>
           <div className="border border-slate-800 p-3 rounded-full hover:bg-sky-200 transition-all duration-500 transform hover:scale-110 cursor-pointer">
-            <a href="#">
+            <a
+              href="https://www.linkedin.com/company/quantum-sharq-innovative-solutions/"
+              target="_blank"
+            >
               <FaLinkedin />
             </a>
           </div>
